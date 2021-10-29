@@ -27,34 +27,34 @@ DB_PASSWORD=laravel
 
 ## Comandos
 
-Se existe o container destrói e recompila
+#### Se existe o container destrói e recompila
 ```bash
 lando destroy -y && lando rebuild -y
 ```
 
-Composer install no projeto
+#### Composer install no projeto
 ```bash
 lando ssh -s appserver -c "composer install"
 ```
 
-Gera a key do projeto
+#### Gera a key do projeto
 ```bash
 lando ssh -s appserver -c "php artisan key:generate"
 ```
 
-Roda as migrations do projeto
+#### Roda as migrations do projeto
 ```bash
 lando ssh -s appserver -c "php artisan migrate"
 ```
 
-Só para testar o override de configurações php no arquivo php.ini
+### Só para testar o override de configurações php no arquivo php.ini
 ```bash
 lando ssh -s appserver -c "php -i | grep upload_max_filesize"
 ```
-Endereço do projeto
+## Endereço do projeto
 https://laravel.lndo.site
 
-Se usa senha única pode-se cadastrar um oauth consumidor respondendo no endereço 
+## Se usa senha única pode-se cadastrar um oauth consumidor respondendo no endereço 
 https://laraval.lndo.site/callback 
 
 Dessa forma seus projetos dev com senha única podem utilizar o mesmo oauth consumidor
