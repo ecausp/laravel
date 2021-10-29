@@ -2,6 +2,8 @@
 
 Arrquivos de configuração para dev com Lando e Laravel
 
+## Uso
+
 Certifique-se de ter instalados o lando e o docker
 
 Clone o projeto Laravel como de costume
@@ -54,5 +56,6 @@ https://laravel.lndo.site
 
 Se usa senha única pode-se cadastrar um oauth consumidor respondendo no endereço 
 https://laraval.lndo.site/callback 
+
 Dessa forma seus projetos dev com senha única podem utilizar o mesmo oauth consumidor
 
