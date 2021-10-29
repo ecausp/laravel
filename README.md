@@ -16,34 +16,43 @@ Para as credenciais MySQL utilize:
 
 ```bash
 DB_CONNECTION=mysql
-
 DB_HOST=database
-
 DB_PORT=3306
-
 DB_DATABASE=laravel
-
 DB_USERNAME=laravel
-
 DB_PASSWORD=laravel
 ```
 
 ## Comandos
 
 Se existe o container destrói e recompila
+```bash
 lando destroy -y && lando rebuild -y
+```
 
 Composer install no projeto
+```bash
 lando ssh -s appserver -c "composer install"
+```
 
 Gera a key do projeto
+```bash
 lando ssh -s appserver -c "php artisan key:generate"
+```
 
 Roda as migrations do projeto
+```bash
 lando ssh -s appserver -c "php artisan migrate"
+```
 
 Só para testar o override de configurações php no arquivo php.ini
+```bash
 lando ssh -s appserver -c "php -i | grep upload_max_filesize"
-
-Endereço do projeto, se usa senha única pode-se cadastrar um oauth consumidor respondendo no endereço https://laraval.lndo.site/callback, dessa forma seus projetos dev com senha única podem utilizar o mesmo oauth consumidor
+```
+Endereço do projeto
 https://laravel.lndo.site
+
+Se usa senha única pode-se cadastrar um oauth consumidor respondendo no endereço 
+https://laraval.lndo.site/callback 
+Dessa forma seus projetos dev com senha única podem utilizar o mesmo oauth consumidor
+
