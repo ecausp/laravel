@@ -1,0 +1,32 @@
+# lando destroy -y && lando rebuild -y
+# lando ssh -s appserver -c "composer install"
+# lando ssh -s appserver -c "php artisan key:generate"
+# lando ssh -s appserver -c "php artisan migrate"
+# lando ssh -s appserver -c "php -i | grep upload_max_filesize"
+# https://laravel.lndo.site
+name: laravel
+recipe: lamp
+config:
+  php: '7.4'
+  composer_version: 2-latest
+  webroot: public
+  xdebug: true
+services:
+  appserver:
+    type: php:custom
+    overrides:
+      image: lando/php:7.4-custom
+      build:
+        context: ./
+        dockerfile: Dockerfile.custom
+      ports:
+        - "80"
+    config:
+      # Override php settings
+      php: php.ini
+  database:
+    type: mysql:5.7
+    creds:
+      user: laravel
+      password: laravel
+      database: laravel
