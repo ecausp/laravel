@@ -24,7 +24,7 @@ DB_DATABASE=laravel
 
 DB_USERNAME=laravel
 
-DB_PASSWORD=larave
+DB_PASSWORD=laravel
 
 ## Comandos
 
