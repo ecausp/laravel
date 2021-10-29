@@ -15,10 +15,15 @@ Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos 
 Para as credenciais MySQL utilize:
 
 DB_CONNECTION=mysql
+
 DB_HOST=database
+
 DB_PORT=3306
+
 DB_DATABASE=laravel
+
 DB_USERNAME=laravel
+
 DB_PASSWORD=larave
 
 ## Comandos
