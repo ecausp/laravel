@@ -8,7 +8,7 @@ Certifique-se de ter instalados o lando e o docker
 
 Caso não tenha, siga os passos nos links abaixo:
 
-Docker: https://docs.docker.com/engine/install/ubuntu/
+Docker: https://docs.docker.com/engine/install/ubuntu/ e após a instalação: https://docs.docker.com/engine/install/linux-postinstall/
 
 Lando: https://docs.lando.dev/basics/installation.html#linux
 
