@@ -6,6 +6,12 @@ Arrquivos de configuração para dev com Lando e Laravel
 
 Certifique-se de ter instalados o lando e o docker
 
+Caso não tenha, siga os passos nos links abaixo:
+
+Docker: https://docs.docker.com/engine/install/ubuntu/
+
+Lando: https://docs.lando.dev/basics/installation.html#linux
+
 Clone o projeto Laravel como de costume
 
 Baixe esses arquivos para a raiz do seu projeto
