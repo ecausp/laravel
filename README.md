@@ -12,6 +12,8 @@ Docker: https://docs.docker.com/engine/install/ubuntu/ e após a instalação: h
 
 Lando: https://docs.lando.dev/basics/installation.html#linux
 
+Reinicie
+
 Clone o projeto Laravel como de costume
 
 Baixe esses arquivos para a raiz do seu projeto
