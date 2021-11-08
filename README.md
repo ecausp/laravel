@@ -1,6 +1,6 @@
 # laravel.lndo.site
 
-Arrquivos de configuração para dev com Lando e Laravel
+O objetivo é ter um ambiente de desenvolvimento (LAMP) para projetos em Laravel utilizando Docker + Lando.
 
 ## Uso
 
@@ -14,9 +14,9 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 
 Reinicie
 
-Clone o projeto Laravel como de costume
+Clone o seu projeto Laravel como de costume
 
-### Baixe esses arquivos para a raiz do seu projeto
+### Baixe os arquivos deste repositório para a raiz do seu projeto
 
 Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
 
