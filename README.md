@@ -1,6 +1,6 @@
 # laravel.lndo.site
 
-O objetivo é ter um ambiente de desenvolvimento (LAMP) para projetos em Laravel utilizando Docker + Lando.
+O objetivo é ter um ambiente de desenvolvimento (LAMP) para projetos em Laravel utilizando Docker + Lando. Com isso não será mais necessário ter Apache, MySql e PHP instalados no desktop de desenvolvimento.
 
 ## Uso
 
@@ -59,6 +59,12 @@ lando ssh -s appserver -c "php artisan migrate"
 ```bash
 lando ssh -s appserver -c "php -i | grep upload_max_filesize"
 ```
+## Sobre o Lando
+
+O Lando também possui outros comandos de acordo com o recipiente utilizado, Ex. LAMP, https://docs.lando.dev/config/lamp.html#tooling
+
+O Lando possui recipientes para outros Frameworks (Symfony) e CMS's (Drupal e Wordpress), https://docs.lando.dev/config/recipes.html#supported-recipes
+
 ## Endereço do projeto
 https://laravel.lndo.site
 
