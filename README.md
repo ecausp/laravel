@@ -20,6 +20,8 @@ Clone o seu projeto Laravel como de costume
 
 Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
 
+Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP, versão do Composer ou pelo servidor de Web utilizado, Apache ou Ngix
+
 ## Configure o .env do projeto
 
 Para as credenciais MySQL utilize:
