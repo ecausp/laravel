@@ -16,9 +16,9 @@ Reinicie
 
 Clone o projeto Laravel como de costume
 
-Baixe esses arquivos para a raiz do seu projeto
+### Baixe esses arquivos para a raiz do seu projeto
 
-Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto
+Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
 
 ## Configure o .env do projeto
 
