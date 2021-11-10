@@ -22,7 +22,7 @@ Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos 
 
 Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP, versão do Composer ou pelo servidor de Web utilizado, Apache ou Ngix
 
-## Configure o .env do projeto
+### Configure o .env do projeto
 
 Para as credenciais MySQL utilize:
 
@@ -35,7 +35,7 @@ DB_USERNAME=laravel
 DB_PASSWORD=laravel
 ```
 
-## Comandos
+### Comandos
 
 #### Se existe o container destrói e recompila
 ```bash
@@ -57,10 +57,16 @@ lando ssh -s appserver -c "php artisan key:generate"
 lando ssh -s appserver -c "php artisan migrate"
 ```
 
-### Só para testar o override de configurações php no arquivo php.ini
+#### Só para testar o override de configurações php no arquivo php.ini
 ```bash
 lando ssh -s appserver -c "php -i | grep upload_max_filesize"
 ```
+
+#### Se reiniciar o pc
+```bash
+lando start
+```
+
 ## Sobre o Lando
 
 O Lando também possui outros comandos de acordo com o recipiente utilizado, Ex. LAMP, https://docs.lando.dev/config/lamp.html#tooling
