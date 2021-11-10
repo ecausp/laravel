@@ -67,6 +67,11 @@ lando ssh -s appserver -c "php -i | grep upload_max_filesize"
 lando start
 ```
 
+#### Informações do container
+```bash
+lando info
+```
+
 ## Sobre o Lando
 
 O Lando também possui outros comandos de acordo com o recipiente utilizado, Ex. LAMP, https://docs.lando.dev/config/lamp.html#tooling
