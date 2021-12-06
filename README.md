@@ -44,22 +44,22 @@ lando destroy -y && lando rebuild -y
 
 #### Composer install no projeto
 ```bash
-lando ssh -s appserver -c "composer install"
+lando composer install
 ```
 
 #### Gera a key do projeto
 ```bash
-lando ssh -s appserver -c "php artisan key:generate"
+lando php artisan key:generate
 ```
 
 #### Roda as migrations do projeto
 ```bash
-lando ssh -s appserver -c "php artisan migrate"
+lando php artisan migrate
 ```
 
 #### Só para testar o override de configurações php no arquivo php.ini
 ```bash
-lando ssh -s appserver -c "php -i | grep upload_max_filesize"
+lando php -i | grep upload_max_filesize
 ```
 
 #### Se reiniciar o pc
