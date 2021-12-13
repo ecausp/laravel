@@ -1,8 +1,8 @@
 # lando destroy -y && lando rebuild -y
-# lando ssh -s appserver -c "composer install"
-# lando ssh -s appserver -c "php artisan key:generate"
-# lando ssh -s appserver -c "php artisan migrate"
-# lando ssh -s appserver -c "php -i | grep upload_max_filesize"
+# lando composer install
+# lando php artisan key:generate
+# lando php artisan migrate
+# lando php -i | grep upload_max_filesize
 # https://laravel.lndo.site
 name: laravel
 recipe: lamp
