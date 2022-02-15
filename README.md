@@ -82,7 +82,7 @@ O Lando possui recipientes para outros Frameworks (Symfony) e CMS's (Drupal e Wo
 https://laravel.lndo.site
 
 ## Se usa senha única pode-se cadastrar um oauth consumidor respondendo no endereço 
-https://laraval.lndo.site/callback 
+https://laravel.lndo.site/callback 
 
 Dessa forma seus projetos dev com senha única podem utilizar o mesmo oauth consumidor
 
