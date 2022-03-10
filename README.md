@@ -4,7 +4,7 @@ O objetivo é ter um ambiente de desenvolvimento (LAMP) para projetos em Laravel
 
 ## Uso
 
-### Certifique-se de ter instalados o lando e o docker, caso não tenha execute os comandos:
+### 1) Certifique-se de ter instalados o lando e o docker, caso não tenha execute os comandos:
 
 ```bash
 sudo apt update
@@ -26,17 +26,17 @@ Docker: https://docs.docker.com/engine/install/ubuntu/
 
 Lando: https://docs.lando.dev/basics/installation.html#linux
 
-### Reinicie seu PC
+### 2) Reinicie seu PC
 
-### Clone o seu projeto Laravel como de costume
+### 3) Clone o seu projeto Laravel como de costume
 
-### Baixe os arquivos (.lando.yml, Dockerfile.custom, php.ini) deste repositório para a raiz do seu projeto
+### 4) Baixe os arquivos (.lando.yml, Dockerfile.custom, php.ini) deste repositório para a raiz do seu projeto
 
 Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
 
 Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP, versão do Composer ou pelo servidor de Web utilizado, Apache ou Ngix
 
-### Configure o .env do projeto
+### 5) Configure o .env do projeto
 
 Para as credenciais MySQL utilize:
 
@@ -49,7 +49,7 @@ DB_USERNAME=laravel
 DB_PASSWORD=laravel
 ```
 
-### Comandos
+### 6) Comandos
 
 #### Se existe o container destrói e recompila
 ```bash
