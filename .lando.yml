@@ -4,6 +4,9 @@
 # lando php artisan migrate
 # lando php -i | grep upload_max_filesize
 # lando ssh --service appserver --user root --command "cat /etc/passwd"
+# lando conteiner location
+# /path/to/my/app => /app
+# $HOME => /user
 # https://laravel.lndo.site
 name: laravel
 recipe: lamp
