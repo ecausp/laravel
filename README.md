@@ -43,7 +43,7 @@ DB_PASSWORD=seuprojeto
 
 ### 6) Comandos
 
-#### Se existe o container destrói e recompila
+#### Recompila o projeto
 ```bash
 lando rebuild -y
 ```
@@ -73,7 +73,7 @@ lando php -i | grep upload_max_filesize
 lando start
 ```
 
-#### Informações do container
+#### Informações do projeto
 ```bash
 lando info
 ```
