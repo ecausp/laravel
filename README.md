@@ -68,7 +68,7 @@ lando php artisan migrate
 lando php -i | grep upload_max_filesize
 ```
 
-#### Se reiniciar o pc
+#### Para iniciar o projeto
 ```bash
 lando start
 ```
@@ -76,6 +76,11 @@ lando start
 #### Informações do container
 ```bash
 lando info
+```
+
+#### Se tem mais projetos iniciando com o mesmo exemplo de .lando.yml, certifique-se de os outros porjetos estão parados. Para isso vá na pasta do projeto que não vai utilizar no momento e execute
+```bash
+lando stop
 ```
 
 ## Sobre o Lando
