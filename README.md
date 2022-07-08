@@ -14,7 +14,9 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 
 ### 2) Reinicie seu PC
 
-### 3) Clone o seu projeto Laravel como de costume
+### 3) Crie seu projeto
+
+Para isso utilize o projeto uspdev/starter, https://github.com/uspdev/starter ou clone seu projeto como de costume
 
 ### 4) Baixe os arquivos (.lando.yml, Dockerfile.custom, php.ini) deste repositório para a raiz do seu projeto
 
