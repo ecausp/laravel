@@ -20,7 +20,9 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 
 No arquivo .lando.yml configure o name do seu projeto
 
+```bash
 name: seuprojeto
+```
 
 Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
 
