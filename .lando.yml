@@ -34,6 +34,7 @@ services:
       user: seuprojeto
       password: seuprojeto
       database: seuprojeto
+# Por conta do uso de senha única o endereço dos projetos fica fixo em laravel.lndo.site, dessa forma para desenvolvimento tem-se um único oauth consumidor cadastrado.
 proxy:
   appserver:
     - laravel.lndo.site
