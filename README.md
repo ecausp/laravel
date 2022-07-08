@@ -1,4 +1,4 @@
-# laravel.lndo.site
+# laravel
 
 O objetivo é ter um ambiente de desenvolvimento (LAMP) para projetos em Laravel utilizando Docker + Lando. Com isso não será mais necessário ter Apache, MySql e PHP instalados no desktop de desenvolvimento.
 
