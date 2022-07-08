@@ -4,23 +4,9 @@ O objetivo é ter um ambiente de desenvolvimento (LAMP) para projetos em Laravel
 
 ## Uso
 
-### 1) Certifique-se de ter instalados o lando e o docker, caso não tenha execute os comandos:
+### 1) Certifique-se de ter instalados o lando e o docker:
 
-```bash
-sudo apt update
-sudo apt-get install ca-certificates curl gnupg lsb-release
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu 
-$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
-wget https://files.lando.dev/installer/lando-x64-stable.deb
-sudo dpkg -i lando-x64-stable.deb
-```
-Ou, se preferir acesse a documentação: 
+Para isso acesse a documentação: 
 
 Docker: https://docs.docker.com/engine/install/ubuntu/ 
 
@@ -31,6 +17,10 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 ### 3) Clone o seu projeto Laravel como de costume
 
 ### 4) Baixe os arquivos (.lando.yml, Dockerfile.custom, php.ini) deste repositório para a raiz do seu projeto
+
+No arquivo .lando.yml configure o name do seu projeto
+
+name: seuprojeto
 
 Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
 
@@ -44,9 +34,9 @@ Para as credenciais MySQL utilize:
 DB_CONNECTION=mysql
 DB_HOST=database
 DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=laravel
-DB_PASSWORD=laravel
+DB_DATABASE=seuprojeto
+DB_USERNAME=seuprojeto
+DB_PASSWORD=seuprojeto
 ```
 
 ### 6) Comandos
