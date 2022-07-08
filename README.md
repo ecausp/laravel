@@ -45,7 +45,7 @@ DB_PASSWORD=seuprojeto
 
 #### Se existe o container destrói e recompila
 ```bash
-lando destroy -y && lando rebuild -y
+lando rebuild -y
 ```
 
 #### Composer install no projeto
