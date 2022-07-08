@@ -1,4 +1,4 @@
-# lando destroy -y && lando rebuild -y
+# lando rebuild -y
 # lando composer install
 # lando php artisan key:generate
 # lando php artisan migrate
@@ -8,7 +8,7 @@
 # /path/to/my/app => /app
 # $HOME => /user
 # https://laravel.lndo.site
-name: laravel
+name: seuprojeto
 recipe: lamp
 config:
   php: '7.4'
@@ -31,6 +31,9 @@ services:
   database:
     type: mysql:5.7
     creds:
-      user: laravel
-      password: laravel
-      database: laravel
+      user: seuprojeto
+      password: seuprojeto
+      database: seuprojeto
+proxy:
+  appserver:
+    - laravel.lndo.site
