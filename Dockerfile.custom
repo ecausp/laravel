@@ -6,3 +6,5 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 # Install Oracle Instantclient, OCI8 and Microsoft SQL Server extensions
 RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
   install-php-extensions oci8-2.2.0 sqlsrv pdo_sqlsrv pdo_dblib
+
+ENV LANG C.UTF-8
