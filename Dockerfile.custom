@@ -7,4 +7,5 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
   install-php-extensions oci8-2.2.0 sqlsrv pdo_sqlsrv pdo_dblib
 
+# Configura a variável de ambiente da imagem Docker para UTF-8 para evitar problemas de codificação
 ENV LANG C.UTF-8
