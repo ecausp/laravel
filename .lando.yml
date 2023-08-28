@@ -17,6 +17,9 @@ config:
   xdebug: true
 services:
   appserver:
+    run_as_root:
+      - ln -snf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+      - echo "America/Sao_Paulo" > /etc/timezone 
     type: php:custom
     overrides:
       image: lando/php:7.4-custom
