@@ -1,11 +1,11 @@
-FROM devwithlando/php:7.4-apache-2
+FROM devwithlando/php:8.2-apache-4-edge
 
 # Add php extension helper
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
-# Install Oracle Instantclient, OCI8 and Microsoft SQL Server extensions
+# Install Microsoft SQL Server extensions
 RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
-  install-php-extensions oci8-2.2.0 sqlsrv pdo_sqlsrv pdo_dblib
+  install-php-extensions sqlsrv pdo_sqlsrv pdo_dblib
 
 # Configura a variável de ambiente da imagem Docker para UTF-8 para evitar problemas de codificação
 ENV LANG C.UTF-8
