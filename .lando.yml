@@ -11,6 +11,7 @@
 name: seuprojeto
 recipe: lamp
 config:
+  # php: '7.4'
   php: '8.2'
   composer_version: 2-latest
   webroot: public
@@ -22,6 +23,7 @@ services:
       - echo "America/Sao_Paulo" > /etc/timezone 
     type: php:custom
     overrides:
+      # image: lando/php:7.4-custom
       image: lando/php:8.2
       build:
         context: ./
@@ -32,6 +34,7 @@ services:
       # Override php settings
       php: php.ini
   database:
+    # type: mysql:5.7
     type: mysql:8.0
     creds:
       user: seuprojeto

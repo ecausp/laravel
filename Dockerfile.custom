@@ -1,3 +1,4 @@
+# FROM devwithlando/php:7.4-apache-2
 FROM devwithlando/php:8.2-apache-4-edge
 
 # Add php extension helper
