@@ -2,6 +2,8 @@
 
 O objetivo é ter um ambiente de desenvolvimento (LAMP) para projetos em Laravel utilizando Docker + Lando. Com isso não será mais necessário ter Apache, MySql e PHP instalados no desktop de desenvolvimento.
 
+**Nota:** o container deste repositoŕio utiliza a versão 8.2 do PHP e a versão 8.0 do MySQL.
+
 ## Uso
 
 ### 1) Certifique-se de ter instalados o lando e o docker:
@@ -16,7 +18,7 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 
 ### 3) Crie seu projeto
 
-Utilize o projeto uspdev/starter: https://github.com/uspdev/starter ou clone seu projeto como de costume
+Utilize o projeto uspdev/starter: https://github.com/uspdev/starter ou clone seu projeto como de costume.
 
 ### 4) Baixe os arquivos (.lando.yml, Dockerfile.custom, php.ini) deste repositório para a raiz do seu projeto
 
@@ -28,7 +30,7 @@ name: seuprojeto
 
 Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
 
-Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP, versão do Composer ou pelo servidor de Web utilizado, Apache ou Ngix
+Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP, versão do Composer ou pelo servidor de Web utilizado, Apache ou Ngix.
 
 ### 5) Configure o .env do projeto
 
