@@ -12,6 +12,7 @@ name: seuprojeto
 recipe: lamp
 config:
   # php: '7.4'
+  # php: '8.3'
   php: '8.2'
   composer_version: 2-latest
   webroot: public
@@ -24,6 +25,7 @@ services:
     type: php:custom
     overrides:
       # image: lando/php:7.4-custom
+      # image: lando/php:8.3
       image: lando/php:8.2
       build:
         context: ./
